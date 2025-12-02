@@ -7,7 +7,7 @@ from tensorflow.keras.preprocessing import image
 from huggingface_hub import hf_hub_download
 
 # Download the model file from your Hugging Face repo
-model_path = hf_hub_download(repo_id="Mielle85/mobileDDD", filename="Adam_run22_model.h5")
+model_path = hf_hub_download(repo_id="Mielle85/MobileDDD", filename="Adam_run22_model.h5")
 
 # Load it with Keras
 model = tf.keras.models.load_model(model_path)
