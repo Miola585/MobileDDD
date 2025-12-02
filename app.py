@@ -2,9 +2,9 @@ import numpy as np
 import gradio as gr
 import tensorflow as tf
 from tensorflow.keras.preprocessing import image
-
+from huggingface_hub import from_pretrained_keras
 # Load the model (make sure this file is uploaded in your Space)
-model = tf.keras.models.load_model("Adam_run22_model.h5")
+model = from_pretrained_keras("Mielle85/MobileDDD")
 
 class_names = ['Drowsy', 'Non Drowsy']
 
