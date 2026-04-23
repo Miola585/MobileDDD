@@ -4,7 +4,7 @@ import tensorflow as tf
 from tensorflow.keras.preprocessing import image
 
 # Load the model (make sure this file is uploaded in your Space)
-model = tf.keras.models.load_model("Adam_run22_model.h5")
+model = tf.keras.models.load_model("Adam_run22_model.h5", compile=False)
 
 class_names = ['Drowsy', 'Non Drowsy']
 
